@@ -1,3 +1,3 @@
 function test(word) {
-return (word);
+return ("fertig: " + word);
 }
