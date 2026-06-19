@@ -1,3 +1,3 @@
 function test(word) {
-message(word);
+return (word);
 }
