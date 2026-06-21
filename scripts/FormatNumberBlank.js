@@ -24,7 +24,7 @@ function FormatNumberBlank(input) {
     }
     
     // Add thousand separators (spaces)
-    let formattedInteger = integerStr.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+    let formattedInteger = integerStr.replace(/\B(?=(\d{3})+(?!\d))/g, '\u2002');
     
     // Pad with spaces to reach exactly 6 characters before decimal
     while (formattedInteger.length < 6) {
