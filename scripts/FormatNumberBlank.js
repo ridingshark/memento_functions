@@ -28,7 +28,7 @@ function FormatNumberBlank(input) {
     
     // Pad with spaces to reach exactly 6 characters before decimal
     while (formattedInteger.length < 6) {
-        formattedInteger = '\u2004' + formattedInteger;
+        formattedInteger = '\u2002' + formattedInteger;
     }
     
     // Return formatted number with comma decimal separator
