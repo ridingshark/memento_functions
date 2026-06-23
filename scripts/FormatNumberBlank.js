@@ -1,6 +1,6 @@
-//Format Number and add blanks before to 6 digits length
+//Format Number and add blanks before a given digits length
 
-function FormatNumberBlank(input) {
+function FormatNumberBlank(input, digits = 6) {
     // Convert to number and handle validation
     let num = typeof input === 'string' ? parseFloat(input) : input;
     
@@ -26,8 +26,8 @@ function FormatNumberBlank(input) {
     // Add thousand separators (spaces)
     let formattedInteger = integerStr.replace(/\B(?=(\d{3})+(?!\d))/g, '\u2002');
     
-    // Pad with spaces to reach exactly 6 characters before decimal
-    while (formattedInteger.length < 6) {
+    // Pad with spaces to reach "digits" or exactly 6 characters before decimal
+    while (formattedInteger.length < digits) {
         formattedInteger = '\u2002' + formattedInteger;
     }
     
